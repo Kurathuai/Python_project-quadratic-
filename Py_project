@@ -1,0 +1,17 @@
+while True:
+    import math
+    a = float(input("Enter the x^2 variables:"))
+    b = float(input("Enter the x variable:"))
+    c = float(input("Enter the constant:"))
+    d = b*b-4*a*c
+
+    if d == 0:
+        print("Equal roots")
+        r1 = (-b + math.sqrt(d)/2*a)
+        print(r1)
+    elif d>0:
+        r1 = (-b + math.sqrt(d)/2*a)
+        r2 = (-b- math.sqrt(d)/2*a)
+        print(r1,r2)
+    else:
+        print("No real root")
